@@ -40,7 +40,7 @@ set nocp
 "set encoding=utf-8
 ""set encoding=gb2312
 set langmenu=zh_CN.gb2312
-language message zh_CN.gb2312
+" language message zh_CN.gb2312
 
 set fileencoding=gbk2312
 set ts=4
@@ -249,21 +249,19 @@ func SetTitle()
     if &filetype == 'sh'
         call setline(1,"\#########################################################################")
         call append(line("."),   "\# File Name:    ".expand("%"))
-        call append(line(".")+1, "\# Author:       程序员Carl")
-        call append(line(".")+2, "\# mail:         programmercarl@163.com")
-        call append(line(".")+3, "\# Created Time: ".strftime("%c"))
-        call append(line(".")+4, "\#########################################################################")
-        call append(line(".")+5, "\#!/bin/bash")
-        call append(line(".")+6, "")
+        call append(line(".")+1, "\# Author:       Steven")
+        call append(line(".")+2, "\# Created Time: ".strftime("%c"))
+        call append(line(".")+3, "\#########################################################################")
+        call append(line(".")+4, "\#!/bin/bash")
+        call append(line(".")+5, "")
     else
         call setline(1, "/* ************************************************************************")
         call append(line("."),   "> File Name:     ".expand("%"))
-        call append(line(".")+1, "> Author:        程序员Carl")
-        call append(line(".")+2, "> 微信公众号:    代码随想录")
-        call append(line(".")+3, "> Created Time:  ".strftime("%c"))
-        call append(line(".")+4, "> Description:   ")
-        call append(line(".")+5, " ************************************************************************/")
-        call append(line(".")+6, "")
+        call append(line(".")+1, "> Author:        Steven")
+        call append(line(".")+2, "> Created Time:  ".strftime("%c"))
+        call append(line(".")+3, "> Description:   ")
+        call append(line(".")+4, " ************************************************************************/")
+        call append(line(".")+5, "")
     endif
     "新建文件后，自动定位到文件末尾
     autocmd BufNewFile * normal G
@@ -313,7 +311,8 @@ endfunc
 " Hello，我是PowerVim的作者，程序员Carl，欢迎关注我的微信公众号：代码随想录 
 
 " 使用的背景主题
-colorscheme Monokai_Gavin
+colorscheme monokai
+" colorscheme Monokai_Gavin
 " 添加自动补全字典
 au FileType php setlocal dict+=~/.vim/dictionary/php_keywords_list.txt
 au FileType cpp setlocal dict+=~/.vim/dictionary/cpp_keywords_list.txt
