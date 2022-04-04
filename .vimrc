@@ -210,7 +210,7 @@ endif
 
 
 "花括号自动格式化，首行一个tab
-autocmd FileType cpp,java inoremap { {<CR>}<ESC>kA<CR>
+autocmd FileType c,cpp,java inoremap { {<CR>}<ESC>kA<CR>
 
 set fenc=" "
 "显示匹配
@@ -231,6 +231,8 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
+" If it is c file, we use tab to indent
+autocmd FileType c set noexpandtab
 
 set ruler           " 显示标尺"
 set cursorline
