@@ -107,7 +107,7 @@ nnoremap <Leader>k <C-W><C-K>
 " 向下
 nnoremap <Leader>j <C-W><C-J>
 " 去除高亮
-nmap <Leader>h :noh<CR>
+"nmap <Leader>h :noh<CR>
 " 打开文件
 nmap <Leader>e :e<Space>
 " 不关闭文件推出
