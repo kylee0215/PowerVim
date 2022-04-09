@@ -183,6 +183,7 @@ nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 set cscopequickfix=s-,c-,d-,i-,t-,e-
+nmap <Leader>cw :cw<CR>
 
 
 " VIM支持多种文本折叠方式，我VIM多用于编码，所以选择符合编程语言语法的代码折叠方式。
