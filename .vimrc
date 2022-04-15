@@ -135,6 +135,7 @@ nnoremap <silent> <Leader>n  :NERDTreeToggle <CR>
 let NERDTreeWinPos="left"
 " 设置忽略的文件
 let NERDTreeIgnore=['\.vim$', '\~$', '\.o$', '\.d$', '\.a$', '\.out$', '\.tgz$']
+let NERDTreeShowHidden=1
 
 " 使用TlistToggle查看文件函数列表。设置快捷键：<F12>
 nnoremap  <Leader>m  :TlistToggle <CR> 
