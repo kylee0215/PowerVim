@@ -84,8 +84,8 @@ nmap <Leader>u <C-U>
 " 向上翻半屏
 nmap <Leader>d <C-D>
 " 快速移动到行首，行尾
-map <Leader>1 ^
-map <Leader>2 $
+map <Leader>11 ^
+map <Leader>22 $
 " 补全提示
 ""nmap <Leader>p <C-P>
 " 快速切换C H源文件
@@ -185,6 +185,26 @@ let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 nmap <Leader>cw :cw<CR>
+
+
+set laststatus=2
+let g:airline_powerlin_fonts = 1
+let g:airline#extensions#tabline#enabled=1
+""let g:airline_statusline_ontop=1
+nnoremap <Leader>[ :bprevious<CR>
+nnoremap <Leader>] :bnext<CR>
+nnoremap <Leader>1 :bfirst<CR>
+nnoremap <Leader>2 :bfirst<CR>:bn<CR>
+nnoremap <Leader>3 :bfirst<CR>:2bn<CR>
+nnoremap <Leader>4 :bfirst<CR>:3bn<CR>
+nnoremap <Leader>5 :bfirst<CR>:4bn<CR>
+nnoremap <Leader>6 :bfirst<CR>:5bn<CR>
+nnoremap <Leader>7 :bfirst<CR>:6bn<CR>
+nnoremap <Leader>8 :bfirst<CR>:7bn<CR>
+nnoremap <Leader>9 :blast<CR>
+nnoremap <Leader>bd :bd<CR>
+
+" let g:airline_theme='simple'
 
 
 " VIM支持多种文本折叠方式，我VIM多用于编码，所以选择符合编程语言语法的代码折叠方式。
