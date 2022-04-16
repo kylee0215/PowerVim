@@ -9,6 +9,7 @@ function digitaldatetime() {
     echo `date +"%Y%m%d%H%M%S"`
 }
 PowerVim=`pwd -P`
+mkdir ~/tmp
 cd $HOME
 
 echo -e "\033[0;35mStart to install vim-conf\033[0m"
