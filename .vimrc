@@ -210,7 +210,6 @@ nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 
 
-
 " VIM支持多种文本折叠方式，我VIM多用于编码，所以选择符合编程语言语法的代码折叠方式。
 " set foldmethod=syntax
 " 启动vim时打开所有折叠代码。
@@ -361,6 +360,21 @@ endfunc
 " 使用的背景主题
 colorscheme monokai
 " colorscheme Monokai_Gavin
+
+" Vim-gitgutter
+set updatetime=250 " Set gitgutter updatetime to 250ms
+let g:gitgutter_max_signs = 500
+" No mapping
+ let g:gitgutter_map_keys = 0
+" Colors
+let g:gitgutter_override_sign_column_highlight = 0
+""highlight clear SignColumn
+" Set ctermbg same as monokai.vim
+highlight GitGutterAdd ctermfg=2 ctermbg=237
+highlight GitGutterChange ctermfg=3 ctermbg=237
+highlight GitGutterDelete ctermfg=1 ctermbg=237
+highlight GitGutterChangeDelete ctermfg=4 ctermbg=237
+
 " 添加自动补全字典
 au FileType php setlocal dict+=~/.vim/dictionary/php_keywords_list.txt
 au FileType cpp setlocal dict+=~/.vim/dictionary/cpp_keywords_list.txt
