@@ -66,6 +66,7 @@ map <Leader>fw :Ack! <Space>
 map <Leader>ff :AckFile!<Space>
 " 定义快捷键 关闭当前分割窗口
 nmap <Leader>q :q<CR>
+nmap <Leader>qq :q!<CR>
 " 定义快捷键
 nmap <Leader>w :w<CR>
 " 删除光标所在单词
