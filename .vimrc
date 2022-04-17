@@ -212,9 +212,10 @@ nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 
 " VIM支持多种文本折叠方式，我VIM多用于编码，所以选择符合编程语言语法的代码折叠方式。
-" set foldmethod=syntax
+set foldmethod=syntax
 " 启动vim时打开所有折叠代码。
 set nofen
+nnoremap <space> za <CR>
 
 let cwd=""
 set tags=tags
