@@ -60,6 +60,12 @@ set noswapfile
 " 禁止光标闪烁
 " set gcr=a:block-blinkon0
 
+inoremap <Leader>q <ESC>
+inoremap <Leader>l <Right>
+inoremap <Leader>h <Left>
+inoremap <Leader>j <Down>
+inoremap <Leader>k <Up>
+
 " ack搜索时不打开第一个搜索文件
 map <Leader>fw :Ack! <Space>
 " AckFile不打开第一个搜索文件
