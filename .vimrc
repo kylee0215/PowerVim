@@ -61,6 +61,7 @@ set noswapfile
 " set gcr=a:block-blinkon0
 
 inoremap <Leader>q <ESC>
+inoremap <Leader>w <ESC> :w <ESC>
 inoremap <Leader>l <Right>
 inoremap <Leader>h <Left>
 inoremap <Leader>j <Down>
