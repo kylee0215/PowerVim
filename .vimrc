@@ -216,7 +216,10 @@ nnoremap <Leader>bd :bd<CR>
 
 nnoremap <Leader>x :<C-u>call gitblame#echo()<CR>
 
-
+" Support vim-fugitive
+nnoremap <Leader>gb :G blame <CR>
+nnoremap <Leader>gd :G diff <CR>
+nnoremap <Leader>gst :G status <CR>
 
 " VIM支持多种文本折叠方式，我VIM多用于编码，所以选择符合编程语言语法的代码折叠方式。
 set foldmethod=syntax
