@@ -214,7 +214,7 @@ nnoremap <Leader>bd :bd<CR>
 
 " let g:airline_theme='simple'
 
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+nnoremap <Leader>x :<C-u>call gitblame#echo()<CR>
 
 
 
