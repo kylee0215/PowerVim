@@ -195,26 +195,50 @@ nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
-set cscopequickfix=s-,c-,d-,i-,t-,e-
+" set cscopequickfix=s-,c-,d-,i-,t-,e-
 nmap <Leader>cw :cw<CR>
 
 
 set laststatus=2
 let g:airline_powerlin_fonts = 1
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_nr_show=1
+
 ""let g:airline_statusline_ontop=1
 nnoremap <Leader>[ :bprevious<CR>
 nnoremap <Leader>] :bnext<CR>
-nnoremap <Leader>1 :bfirst<CR>
-nnoremap <Leader>2 :bfirst<CR>:bn<CR>
-nnoremap <Leader>3 :bfirst<CR>:2bn<CR>
-nnoremap <Leader>4 :bfirst<CR>:3bn<CR>
-nnoremap <Leader>5 :bfirst<CR>:4bn<CR>
-nnoremap <Leader>6 :bfirst<CR>:5bn<CR>
-nnoremap <Leader>7 :bfirst<CR>:6bn<CR>
-nnoremap <Leader>8 :bfirst<CR>:7bn<CR>
-nnoremap <Leader>9 :blast<CR>
+nnoremap <Leader>1 :b1<CR>
+nnoremap <Leader>2 :b2<CR>
+nnoremap <Leader>3 :b3<CR>
+nnoremap <Leader>4 :b4<CR>
+nnoremap <Leader>5 :b5<CR>
+nnoremap <Leader>6 :b6<CR>
+nnoremap <Leader>7 :b7<CR>
+nnoremap <Leader>8 :b8<CR>
+nnoremap <Leader>9 :b9<CR>
 nnoremap <Leader>bd :bd<CR>
+
+" Separate buffer to window horizontally
+nnoremap <Leader>sb1 :sb1<CR>
+nnoremap <Leader>sb2 :sb2<CR>
+nnoremap <Leader>sb3 :sb3<CR>
+nnoremap <Leader>sb4 :sb4<CR>
+nnoremap <Leader>sb5 :sb5<CR>
+nnoremap <Leader>sb6 :sb6<CR>
+nnoremap <Leader>sb7 :sb7<CR>
+nnoremap <Leader>sb8 :sb8<CR>
+nnoremap <Leader>sb9 :sb9<CR>
+
+" Separate buffer to window vertically
+nnoremap <Leader>vsb1 :vert sb1<CR>
+nnoremap <Leader>vsb2 :vert sb2<CR>
+nnoremap <Leader>vsb3 :vert sb3<CR>
+nnoremap <Leader>vsb4 :vert sb4<CR>
+nnoremap <Leader>vsb5 :vert sb5<CR>
+nnoremap <Leader>vsb6 :vert sb6<CR>
+nnoremap <Leader>vsb7 :vert sb7<CR>
+nnoremap <Leader>vsb8 :vert sb8<CR>
+nnoremap <Leader>vsb9 :vert sb9<CR>
 
 " let g:airline_theme='simple'
 
