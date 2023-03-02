@@ -182,6 +182,12 @@ if filereadable("cscope.out")
    cs add cscope.out
 elseif $CSCOPE_DB != ""
     cs add $CSCOPE_DB
+else
+    let cscope_file=findfile("cscope.out", ".;")
+    let cscope_pre=matchstr(cscope_file, ".*/")
+    if !empty(cscope_file) && filereadable(cscope_file)
+        exe "cs add" cscope_file cscope_pre
+    endif
 endif
 set cscopeverbose
 
