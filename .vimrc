@@ -204,6 +204,7 @@ let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 " set cscopequickfix=s-,c-,d-,i-,t-,e-
 nmap <Leader>cw :cw<CR>
 
+set relativenumber
 
 set laststatus=2
 let g:airline_powerlin_fonts = 1
